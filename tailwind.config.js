@@ -163,6 +163,7 @@ module.exports = {
           },
           "100%": {
             opacity: "0",
+            visibility: "hidden"
           },
         },
       },
