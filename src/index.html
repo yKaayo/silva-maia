@@ -24,17 +24,20 @@
   </head>
   <body>
     <!-- Animation to Open the Website -->
-    <div class="fixed inset-0 overflow-hidden bg-gray-100">
+    <div
+      class="fixed z-[3] inset-0 overflow-hidden bg-gray-50 animate-hideIntro"
+    >
       <div
         class="absolute top-1/2 left-1/2 translate-x-[-1/2] translate-y-[-1/2] bg-black w-0 h-0 animate-expand"
       ></div>
       <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[1000px] w-dvw "
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[1000px] w-dvw"
       ></div>
+
       <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-dvh w-dvw "
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-dvh w-dvw animate-yellowGradient"
       >
-        <div class="flex justify-center items-center h-full animate-yellowGradient">
+        <div class="flex justify-center items-center h-full">
           <img
             class="opacity-0 h-16 animate-showLogo"
             src="./assets/Silva Maia.svg"
@@ -44,47 +47,51 @@
       </div>
     </div>
 
-    <header class="w-dvh p-5 bg-gradient-dark">
-      <nav>
-        <div class="flex flex-wrap items-center justify-between mx-auto">
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="./assets/Silva Maia.svg" alt="Silva Maia Logo" />
-          </a>
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden focus:ring-2 focus:ring-gray-200"
-            aria-controls="navbar-default"
-            aria-expanded="false"
-            id="menuToX"
-          >
-            <span class="sr-only">Menu</span>
-            <i class="bi bi-justify-right text-2xl text-white"></i>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul
-              class="flex flex-col p-4 md:p-0 mt-4 text-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 text-xl"
+    <main class="bg-black w-dvw">
+      <div class="fixed h-dvh w-dvw z-[1] gradient-yellow"></div>
+      <header
+        class="fixed z-[2] w-dvw p-5 bg-gradient-to-b from-black from-15% to-gray-400"
+      >
+        <nav>
+          <div class="flex flex-wrap items-center justify-between mx-auto">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="./assets/Silva Maia.svg" alt="Silva Maia Logo" />
+            </a>
+            <button
+              data-collapse-toggle="navbar-default"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center rounded-lg md:hidden focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-default"
+              aria-expanded="false"
+              id="menuToX"
             >
-              <li>
-                <a href="#" class="block py-2 px-3 md:p-0" aria-current="page"
-                  >Criar a sua Estampa</a
-                >
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-3 md:p-0">Promoção</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-3 md:p-0">Produto</a>
-              </li>
-              <li>
-                <a href="#" class="block py-2 px-3 md:p-0">Contato</a>
-              </li>
-            </ul>
+              <span class="sr-only">Menu</span>
+              <i class="bi bi-justify-right text-2xl text-white"></i>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+              <ul
+                class="flex flex-col p-4 md:p-0 mt-4 text-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 text-xl"
+              >
+                <li>
+                  <a href="#" class="block py-2 px-3 md:p-0" aria-current="page"
+                    >Criar a sua Estampa</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-3 md:p-0">Promoção</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-3 md:p-0">Produto</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 px-3 md:p-0">Contato</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
-    <main></main>
+        </nav>
+      </header>
+    </main>
 
     <!-- Flowbite -->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>

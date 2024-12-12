@@ -680,6 +680,22 @@ video {
   z-index: 50;
 }
 
+.z-\[-1\] {
+  z-index: -1;
+}
+
+.z-\[1\] {
+  z-index: 1;
+}
+
+.z-\[2\] {
+  z-index: 2;
+}
+
+.z-\[3\] {
+  z-index: 3;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -767,6 +783,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[90dvh\] {
+  height: 90dvh;
 }
 
 .w-0 {
@@ -887,42 +907,155 @@ video {
   animation: expand 1.4s ease-in forwards;
 }
 
+@keyframes hideIntro {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-hideIntro {
+  animation: hideIntro 5s ease-in-out forwards;
+}
+
 @keyframes showLogo {
   0% {
     opacity: 0;
   }
 
-  100% {
+  30% {
     opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
 .animate-showLogo {
-  animation: showLogo .8s ease-in .8s forwards;
+  animation: showLogo 2.8s ease-in .8s forwards;
 }
 
 @keyframes yellowGradient {
   0% {
-    background: radial-gradient(circle, rgba(255,248,56,1) 40%, rgba(102,102,102,0.8) 80%, rgba(0,0,0,0) 100%);
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 20%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+    background-size: 200% 200%;
+    background-position: 50% 50%;
     opacity: 0;
   }
 
-  50% {
-    background: radial-gradient(circle, rgba(255,248,56,1) 40%, rgba(102,102,102,0.8) 80%, rgba(0,0,0,0) 100%);
+  40% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 20%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+    background-size: 200% 200%;
+    background-position: 50% 50%;
     opacity: 1;
   }
 
+  65% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 20%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+    background-size: 200% 200%;
+    background-position: 100% 100%;
+    opacity: 1;
+  }
+
+  66% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 19.5%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  68% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 19%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  69% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 18.5%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  70% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 18%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  72% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 17.5%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  73% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 17%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  75% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 16.5%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  76% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 16%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  78% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 15.5%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
   80% {
-    background: radial-gradient(circle at top left, rgba(255,248,56,1) 25%, rgba(102,102,102,0.8) 65%, rgba(0,0,0,0) 100%);
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 15%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+    background-size: 200% 200%;
+    background-position: 100% 100%;
+  }
+
+  82% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 14.5%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  84% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 14%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  86% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 13.5%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  88% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 13%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  90% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 12.5%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  92% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 12%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  94% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 11.5%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  96% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 11%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+  }
+
+  98% {
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 10.5%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
   }
 
   100% {
-    background: radial-gradient(circle at center left, rgba(255,248,56,1) 25%, rgba(102,102,102,0.8) 65%, rgba(0,0,0,0) 100%);
+    background-image: radial-gradient(circle, rgba(255,248,56,1) 10%, rgba(102,102,102,0.8) 50%, rgba(0,0,0,0) 100%);
+    background-size: 200% 200%;
+    background-position: 100% 50%;
   }
 }
 
 .animate-yellowGradient {
-  animation: yellowGradient 10s ease-in-out 1s forwards;
+  animation: yellowGradient 4s ease-in-out 1s forwards;
 }
 
 .cursor-default {
@@ -1094,6 +1227,29 @@ video {
 
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
+}
+
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.from-black {
+  --tw-gradient-from: #000 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-15\% {
+  --tw-gradient-from-position: 15%;
+}
+
+.to-gray-400 {
+  --tw-gradient-to: #9ca3af var(--tw-gradient-to-position);
 }
 
 .p-1 {
@@ -1281,14 +1437,15 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-header {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(102, 102, 102, 0.2) 100%
+.gradient-yellow {
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 248, 56, 1) 10%,
+    rgba(102, 102, 102, 0.8) 50%,
+    rgba(0, 0, 0, 0) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#666666",GradientType=1);
+  background-size: 200% 200%;
+  background-position: 100% 50%;
 }
 
 .hover\:border-gray-300:hover {
@@ -1497,4 +1654,3 @@ header {
     color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   }
 }
-
