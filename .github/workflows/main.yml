@@ -23,9 +23,6 @@ jobs:
     - name: Instalar dependências
       run: npm install
     
-    - name: Buildar Tailwind
-      run: npm run tailwind
-    
     - name: Construir projeto
       run: npm run build
 
