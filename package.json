@@ -2,12 +2,14 @@
   "name": "silva-maia",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://yKaayo.github.io/silva-maia",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "tailwind": "tailwindcss -i ./css/style.css -o ./src/css/style.css --watch",
     "dev": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "keywords": [],
@@ -16,6 +18,7 @@
   "description": "",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16"
   },
