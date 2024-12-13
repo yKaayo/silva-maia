@@ -26,10 +26,13 @@ jobs:
     - name: Construir projeto
       run: npm run build
 
-    # Opcional: Deploy 
+    - name: Deploy no Github Pages
+      run: gh-pages -d dist
+
     - name: Deploy para GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
         publish_dir: ./dist
+
