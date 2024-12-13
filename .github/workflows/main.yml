@@ -26,6 +26,9 @@ jobs:
     - name: Construir projeto
       run: npm run build
 
+    - name: Instalar gh-pages
+      run: npm install -g gh-pages
+      
     - name: Deploy no Github Pages
       run: gh-pages -d dist
 
